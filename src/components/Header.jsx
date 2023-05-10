@@ -25,7 +25,7 @@ export default function Header() {
   console.log(location.pathname.slice(1, location.pathname.length));
 
   return (
-    <Disclosure as="nav" className="bg-light-800 text-sky-400">
+    <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

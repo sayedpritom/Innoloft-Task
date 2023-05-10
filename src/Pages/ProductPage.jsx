@@ -20,9 +20,10 @@ const Product = () => {
     }, [])
 
 
-    const { name, picture, type, description, categories, businessModels, trl, investmentEffort } = product;
+    const { name, picture, type, description, user, company, categories, businessModels, trl, investmentEffort } = product;
 
-    console.log(product);
+    const main = {name, picture, type, description, user, company}
+    const details = {categories, businessModels, trl, investmentEffort}
 
     if (!product.id) {
         return (
@@ -32,8 +33,8 @@ const Product = () => {
 
     return (
         <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
-            <Main product={product} />
-            <Details product={product} />
+            <Main main={main} />
+            <Details details={details} />
         </div>
     );
 };

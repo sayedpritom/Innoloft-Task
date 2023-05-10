@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import ProductPage from "./Pages/ProductPage";
 import ProductEditPage from "./Pages/ProductEditPage";
@@ -18,7 +17,7 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
-        <Route index path="/Main" element={<MainPage/>} />
+        <Route index path="/" element={<MainPage/>} />
         <Route path="/Product" element={<ProductPage/>} />
         <Route index path="/Edit" element={<ProductEditPage/>} />
       </Route>)
